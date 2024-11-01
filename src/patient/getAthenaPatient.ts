@@ -15,7 +15,6 @@ export async function getAthenaPatient(
   const { patientid, ...query } = params;
   const apiUrl = new URL(`${athenaConfig?.origin}/patients/${patientid}`);
   apiUrl.search = toUrlParams(query).toString();
-  console.log(apiUrl.toString());
   const response = await fetch(apiUrl, {
     headers: { Authorization: athenaConfig?.auth ?? "" },
   });

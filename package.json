@@ -2,13 +2,12 @@
   "name": "athena-api",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "prepare": "npm run build"
+    "prepare": "pnpm run build"
   },
-  "keywords": [],
   "author": "Collin Napier",
   "license": "ISC",
   "description": "AthenaHealth API wrapper",

@@ -1,2 +1,13 @@
 dist/
 node_modules/
+
+
+# // "files": [
+# //   "dist"
+# // ]
+# // "exports": {
+# //   ".": "./dist",
+# //   "./patient": "./dist/patient",
+# //   "./types": "./dist/types",
+# //   "./error": "./dist/error"
+# // }

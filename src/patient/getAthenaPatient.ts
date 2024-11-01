@@ -1,3 +1,5 @@
+import { AthenaError } from "../error";
+import { errorCheck } from "../error/errorCheck";
 import { athenaConfig, toUrlParams } from "../globals";
 import { FindPatientParams } from "../types/params";
 import { FindPatientResponse } from "../types/responses";
@@ -17,6 +19,8 @@ export async function getAthenaPatient(
   const response = await fetch(apiUrl, {
     headers: { Authorization: athenaConfig?.auth ?? "" },
   });
+
+  await errorCheck(response);
 
   return response;
 }

@@ -6,8 +6,10 @@
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "sourceMap": true
+    // "declaration": true,
+    // "sourceMap": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true
   },
   "include": ["src/**/*"]
 }

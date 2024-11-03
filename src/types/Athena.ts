@@ -1,4 +1,4 @@
-export type AthenaPatientRecord = {
+export interface AthenaPatientRecord {
   address1: string;
   address2: string;
   agriculturalworker: string;
@@ -300,9 +300,9 @@ export type AthenaPatientRecord = {
   veteran: string;
   workphone: string;
   zip: string;
-};
+}
 
-export type AthenaPatientMedications = {
+export interface AthenaPatientMedications {
   lastdownloaddenialreason: string;
   lastdownloaddenied: boolean; // Treating empty string as boolean
   lastdownloadeddate: string;
@@ -366,4 +366,4 @@ export type AthenaPatientMedications = {
   patientdownloadconsent: boolean; // Treating empty string as boolean
   patientneedsdownloadconsent: boolean; // Treating empty string as boolean
   sectionnote: string;
-};
+}

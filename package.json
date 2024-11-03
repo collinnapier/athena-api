@@ -1,11 +1,17 @@
 {
   "name": "athena-api",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "version": "0.1.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.ts"
+      ]
+    }
+  },
   "scripts": {
-    "build": "tsup",
+    "build": "tsc",
     "prepare": "pnpm run build"
   },
   "author": "Collin Napier",
